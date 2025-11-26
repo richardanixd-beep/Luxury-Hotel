@@ -1,11 +1,9 @@
 const mongoose = require("mongoose");
 
 const RoomSchema = new mongoose.Schema({
-  number: { type: String, required: true },
-  type: { type: String, required: true },
+  name: { type: String, required: true },
   price: { type: Number, required: true },
-  amenities: { type: [String], default: [] },
-  status: { type: String, enum: ["Vacant","Occupied","Reserved","Under maintenance"], default: "Vacant" },
+  status: { type: String, enum: ["Available", "Reserved"], default: "Available" },
   createdAt: { type: Date, default: Date.now }
 });
 

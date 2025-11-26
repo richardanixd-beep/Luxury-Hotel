@@ -9,8 +9,7 @@ const UserSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now }
 });
 
-// Method to compare password
-UserSchema.methods.comparePassword = async function (password) {
+UserSchema.methods.comparePassword = async function(password) {
   return await bcrypt.compare(password, this.passwordHash);
 };
 
