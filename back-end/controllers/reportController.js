@@ -1,5 +1,5 @@
-const Booking = require("models/Booking");
-const Room = require("/models/Room");
+const Booking = require("../models/Booking");
+const Room = require("../models/Room");
 
 // GET /api/reports/summary
 const summary = async (req, res) => {
