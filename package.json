@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "build": "cd front-end && npm install && npm run build",
+    "start": "cd back-end && npm start"
+  },
   "dependencies": {
     "bcryptjs": "^3.0.3",
     "cors": "^2.8.5",
