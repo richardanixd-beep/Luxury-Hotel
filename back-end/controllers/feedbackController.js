@@ -1,4 +1,4 @@
-const Feedback = require("/models/Feedback");
+const Feedback = require("models/Feedback");
 
 // POST /api/feedback
 const createFeedback = async (req, res) => {

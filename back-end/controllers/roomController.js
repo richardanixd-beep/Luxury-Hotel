@@ -1,4 +1,4 @@
-const Room = require("/models/Room");
+const Room = require("gitmodels/Room");
 
 // CREATE ROOM (Admin)
 const createRoom = async (req, res) => {
