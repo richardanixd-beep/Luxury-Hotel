@@ -1,0 +1,25 @@
+# Hotel System (Minimal Fullstack)
+
+## Structure
+- backend/ — Express API (MongoDB)
+- frontend/ — React + Vite UI
+
+## Quick start (local)
+1. Backend:
+   - cd backend
+   - copy `.env.example` -> `.env` and fill `MONGODB_URI` and `JWT_SECRET`
+   - npm install
+   - npm run dev
+
+2. Frontend:
+   - cd frontend
+   - npm install
+   - npm run dev
+   - Open http://localhost:5173
+
+## Notes
+- Auth uses JWT stored in `localStorage` (simple approach).
+- Admin-only routes: create a user and manually set `role` to `admin` in MongoDB to access admin endpoints.
+- For production, deploy backend to Render/Railway/Vercel (serverless) and frontend to Vercel.
+- Use MongoDB Atlas for database.
+- Add reCAPTCHA or rate-limiting for registration/login in production.
